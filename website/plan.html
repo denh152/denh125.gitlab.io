@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fe · Plans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+        /* Shared Plan Container Styles */
+    .plan-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    /* Monthly & Annual Plan Box */
+    .plan-monthly,
+    .plan-container > .plan-title {
+        background-color: #ffc0cb4d; /* light pink with transparency */
+        padding: 20px;
+        border-radius: 15px;
+        width: 300px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .plan-old-price {
+        text-decoration: line-through;
+        color: #cccccc;
+        font-size: 0.9em;
+    }
+    /* Plan Title */
+    .plan-title {
+        font-size: 1.1em; 
+        color: #e06666;
+        margin-bottom: 15px;
+    }
+
+    /* Main Price Button */
+    .plan-price,
+    .plan-new-price {
+        background-color: var(--brand-pink, #f46e6e); /* Updated to match the login/signup buttons */
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        letter-spacing: 0.5px;
+    }
+    .plan-equivalent {
+        font-size: 0.8em;
+        color: #757575;
+    }
+  </style>
+
+</head>
+<body>
+<main class="auth-wrapper">
+<h2 style="color: #FC8080; font-size: 18px; font-weight: 900; margin-bottom: 30px;" >CHOOSE THE BEST PLAN FOR YOU</h2>
+
+    <div class="plan-container">
+      <div class="plan-monthly">
+        <div class="plan-title">MONTHLY SUBSCRIPTION</div>
+    </div>
+    <a href="payment.html" class="plan-price" style="margin-top: -50px; display: inline-block; text-align: center; text-decoration: none;">14.99&nbsp;€</a>
+    <div class="plan-container">
+        <div class="plan-title">ANNUAL SUBSCRIPTION</div>
+          <a href="payment.html" style="margin-top: -50px; display: inline-block; text-align: center; text-decoration: none;" class="plan-new-price">
+            <span class="plan-old-price">180€</span>
+            <span style="font-size: 1.5rem;">159.99&nbsp;€</span>
+        </a>
+        
+      </div>
+
+    </div>
+    <div style="margin-top: 5px;" class="plan-equivalent">Equivalent to 13.25&nbsp;€ per month</div>
+
+    
+</main>
+</body>
+</html>

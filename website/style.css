@@ -1,0 +1,145 @@
+:root {
+    --brand-pink: #f46e6e;
+    --brand-white: #ffffff;
+    --radius-pill: 40px;
+    --font-stack: 'Montserrat', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-stack);
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, top left;
+    background-size: 377px 262px, 377px 262px;
+    background-image: url("assets/cage1.svg"), url("assets/cage2.svg");
+  }
+  
+  .auth-wrapper {
+    width: 90%;
+    max-width: 440px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--brand-pink);
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--brand-pink);
+    margin-bottom: 3rem;
+  }
+  
+ .input {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  margin: 30px auto 0 auto;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.input::placeholder {
+  opacity: 0.25;
+}
+
+  
+.btn {
+    display: block;
+    width: 200px;
+    height: 52px;
+    margin: 30px auto 0 auto;
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-pill);
+    background-color: var(--brand-pink);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: opacity 0.25s;
+    line-height: 52px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .btn.outlined {
+    background-color: var(--brand-white);
+    color: var(--brand-pink);
+    border: 2px solid var(--brand-pink);
+  }
+  
+  .btn:hover {
+    opacity: 0.88;
+  }
+  
+
+  
+  /* Large screens */
+  @media (min-width: 1023px) {
+    body {
+      background-size: 660px 453px, 660px 453px;
+    }
+  
+    h1 {
+      font-size: 4rem;
+    }
+    
+      
+    .btn {
+        width: 290px;
+        height: 52px;
+        margin-top: 30px;
+        line-height: 52px;
+      }
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat1.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
